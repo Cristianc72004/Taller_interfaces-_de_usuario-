@@ -25,6 +25,8 @@ fun NavigatioHostController(){
 
         composable(route = "checkbox") { CheckBoxScreen(navController)
         }
+        composable(route = "Botones") { ButtonScreen(navController)
+        }
 
 
 

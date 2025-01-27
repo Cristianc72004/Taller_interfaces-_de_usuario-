@@ -47,7 +47,7 @@ fun TextScreen(navController: NavHostController) {
             modifier = Modifier.padding(paddingValues)
         ) {
             // Ejemplo 1: TextField básico
-            var text by remember { mutableStateOf("") }
+            var text by rememberSaveable { mutableStateOf("") }
             TextField(
                 value = text,
                 onValueChange = { newValue -> text = newValue },

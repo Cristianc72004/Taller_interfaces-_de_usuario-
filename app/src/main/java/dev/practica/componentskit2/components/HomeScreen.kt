@@ -12,6 +12,10 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.ChecklistRtl
+import androidx.compose.material.icons.filled.EditAttributes
+import androidx.compose.material.icons.filled.EditLocation
+import androidx.compose.material.icons.filled.Textsms
 import androidx.navigation.NavHostController
 import dev.practica.componentkits.components.ItemContact
 
@@ -35,15 +39,22 @@ fun HomeScreen(navController: NavHostController) {
 
                 })
             ItemContact(
-                name = "TextField Screen", Icons.Default.Edit,
+                name = "TextField Screen", Icons.Default.Textsms,
                 Modifier.clickable {
                     navController.navigate("text")
                 }
             )
             ItemContact(
-                name = "CheckBox Screen", Icons.Default.Check,
+                name = "CheckBox Screen", Icons.Default.ChecklistRtl,
                 Modifier.clickable {
                     navController.navigate("checkbox")
+                }
+            )
+
+            ItemContact(
+                name = "Botones", Icons.Default.EditAttributes,
+                Modifier.clickable {
+                    navController.navigate("Botones")
                 }
             )
 

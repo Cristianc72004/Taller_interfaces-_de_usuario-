@@ -41,7 +41,8 @@ fun IconsScreen(navController: NavHostController) {
             TopAppBar(
                 title = { Text(text = "Iconos y Botones") },
                 navigationIcon = { // Aquí añadimos el ícono de "volver"
-                    androidx.compose.material3.Icon(
+                    androidx.compose.material3.
+                    Icon(
                         imageVector = androidx.compose.material.icons.Icons.Default.ArrowBack,
                         contentDescription = "Volver",
                         modifier = Modifier.clickable { navController.popBackStack() }
